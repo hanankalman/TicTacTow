@@ -28,6 +28,13 @@ function resetScore() {
     document.getElementById("gameScoreTable").rows[2].cells.namedItem("oWin").innerHTML = oWinCounter;
 }
 
+function register(){
+    let regPlayerOne = prompt ("Enter Player One Name");
+    let regPlayerTwo = prompt ("Enter Player Two Name");
+    document.getElementById("gameScoreTable").rows[1].cells.namedItem("playerX").innerHTML = regPlayerOne;
+    document.getElementById("gameScoreTable").rows[1].cells.namedItem("playerO").innerHTML = regPlayerTwo;
+}
+
 function ArrayToMatrix(arr, num) {
     // Convert an array to a matrix for easier mental math
     let matrix = [], i, k;

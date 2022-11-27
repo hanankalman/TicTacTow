@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Tow</title>
+</head>
+
+<body>
+    <!-- create a 3 X 3 table with botton in every box -->
+    <div class="container">
+        <h1 style="color: rgb(178, 235, 138);">Tic Tac Tow</h1>
+        <div class="table_div">
+            <table>
+                <tr>
+                    <td><button class="btn" id="btn1"></button></td>
+                    <td><button class="btn" id="btn2"></button></td>
+                    <td><button class="btn" id="btn3"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" id="btn4"></button></td>
+                    <td><button class="btn" id="btn5"></button></td>
+                    <td><button class="btn" id="btn6"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" id="btn7"></button></td>
+                    <td><button class="btn" id="btn8"></button></td>
+                    <td><button class="btn" id="btn9"></button></td>
+                </tr>
+            </table>
+        </div>
+        <p></p>
+        <div class="score_div">
+            <table id="gameScoreTable" class="score_table">
+                <tr>
+                    <td></td>
+                    <td style="color: rgb(178, 235, 138);">Game Score</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Player X</td>
+                    <td></td>
+                    <td>Player O</td>
+                </tr>
+                <tr>
+                    <td id="xWin">0</td>
+                    <td></td>
+                    <td id="oWin">0</td>
+                </tr>
+            </table>
+        </div>
+        <p></p>
+        <div>
+            <button id="reset_btn" onclick="reset()">Reset Game</button>
+            <button id="reset_score" onclick="resetScore()">Reset Score</button>
+        </div>
+        <h4 style="color:white;">by Hanan kalman</h4>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

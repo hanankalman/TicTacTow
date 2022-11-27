@@ -65,16 +65,16 @@ function scoreUpdate(sym) {
 function checkForWin(arg, sym) {
     // Check for a win
     if (chkDiagonal(arg, sym) == true) {
-        scoreUpdate(sym);
+        setTimeout(function () { scoreUpdate(sym) }, 500);
     } else {
         if (chkDiagonalT(arg, sym) == true) {
-            scoreUpdate(sym);
+            setTimeout(function () { scoreUpdate(sym) }, 500);
         } else {
             if (chkRow(arg, sym) == true) {
-                scoreUpdate(sym);
+                setTimeout(function () { scoreUpdate(sym) }, 500);
             } else {
                 if (chkCol(arg, sym) == true) {
-                    scoreUpdate(sym);
+                    setTimeout(function () { scoreUpdate(sym) }, 500);
                 } else {
                     checkforTie(arg);
                 }
